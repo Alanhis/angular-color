@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.config';
 import { ErrorPageComponent } from './page/error-page/error-page.component';
-import { CommonModule } from '@angular/common';
 import { MainPageComponent } from './page/main-page/main-page.component';
 import { HeaderComponent } from './component/header/header.component';
 
