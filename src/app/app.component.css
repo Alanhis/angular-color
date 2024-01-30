@@ -1,0 +1,29 @@
+.color_container{
+    height: 300px; 
+    width: 18vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.showcase_section{
+    display: flex; 
+    gap: 15px;
+}
+.color_main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:600px) {
+    .color_main{
+        background-color: red;
+    }
+    .showcase_section{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .color_container{
+        width: 50vw;
+    }
+}
