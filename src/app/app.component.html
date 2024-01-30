@@ -1,8 +1,9 @@
-<main class="color_main">
-  <h2>Color</h2>
-  <button style="margin: 10px;" (click)="searchColor()">Изменить цвет</button>
-  <section class="showcase_section">
-    <div *ngFor="let item of response; index as i;" class="color_container" style="background-color: rgb({{item}})"><button (click)="lockColor(i)">Lock</button>
-    <button (click)="saveColor(i)">Save</button></div>
-  </section>
-</main>
+
+<div class="wrapper">
+  <app-header></app-header>
+
+  <main>
+      <router-outlet></router-outlet>
+  </main>
+
+</div>
