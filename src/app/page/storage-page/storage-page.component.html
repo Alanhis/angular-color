@@ -1,0 +1,9 @@
+<section class="storage_section">
+    <div *ngFor="let storage of color; index as i;" class="showcase_section" > 
+        <div>
+            <p>Палитра № {{storage.index + 1}}</p>
+            <button (click)="deleteStorage(i)">Удалить</button>
+        </div>
+        <div *ngFor="let item of storage.data | keyvalue" class="color_container" style="background-color: rgb({{item.value}})"></div> 
+     </div>
+</section>

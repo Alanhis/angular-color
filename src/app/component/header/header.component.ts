@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
+  todayDate: Date = new Date();
+  constructor() {
+    setInterval(() => {
+      this.todayDate = new Date();
+    }, 1)
+  }
 }

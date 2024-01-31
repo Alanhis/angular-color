@@ -1,0 +1,26 @@
+.color_container{
+    height: 300px; 
+    width: 18vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.showcase_section{
+    display: flex; 
+    gap: 15px;
+}
+.storage_section{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+@media screen and (max-width:600px) {
+    .showcase_section{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .color_container{
+        width: 50vw;
+    }
+}

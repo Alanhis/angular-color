@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app.config';
 import { ErrorPageComponent } from './page/error-page/error-page.component';
 import { MainPageComponent } from './page/main-page/main-page.component';
 import { HeaderComponent } from './component/header/header.component';
+import { StoragePageComponent } from './page/storage-page/storage-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent,
     MainPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    StoragePageComponent
   ],
   imports: [
     BrowserModule,

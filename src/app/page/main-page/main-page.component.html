@@ -5,4 +5,5 @@
       <div *ngFor="let item of response; index as i;" class="color_container" style="background-color: rgb({{item}})"><button (click)="lockColor(i)">Lock</button>
       <button (click)="saveColor(i)">Save</button></div>
     </section>
+    <button style="margin: 10px;" (click)="storageColor()">Сохранить палитру</button>
   </main>
