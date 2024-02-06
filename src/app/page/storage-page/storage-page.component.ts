@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { StorageColorService } from 'src/app/service/storage-color.service';
+import { Store } from '@ngrx/store';
+
+import { clear } from 'src/app/store/color.actions';
 
 @Component({
   selector: 'app-storage-page',
@@ -7,15 +9,12 @@ import { StorageColorService } from 'src/app/service/storage-color.service';
   styleUrls: ['./storage-page.component.css']
 })
 export class StoragePageComponent {
-  color: any = []
-  constructor(private storage: StorageColorService) {
+  color$: any
+  constructor(private store: Store<{ color: any }>) {
+    this.color$ = store.select('color');
+
   }
   deleteStorage(index: number) {
-    this.color = this.color.filter((data: any) => data.index !== index)
-    this.storage.deleteColor(index)
-  }
-  ngOnInit() {
-    this.color = this.storage.getStorageColor()
-    console.log(this.color)
+    this.store.dispatch(clear({ index }))
   }
 }

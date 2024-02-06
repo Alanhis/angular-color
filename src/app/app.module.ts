@@ -7,7 +7,8 @@ import { ErrorPageComponent } from './page/error-page/error-page.component';
 import { MainPageComponent } from './page/main-page/main-page.component';
 import { HeaderComponent } from './component/header/header.component';
 import { StoragePageComponent } from './page/storage-page/storage-page.component';
-
+import { colorReducer } from './store/color.reducer';
+import { StoreModule } from '@ngrx/store';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { StoragePageComponent } from './page/storage-page/storage-page.component
   imports: [
     BrowserModule,
     AppRoutingModule,
+    StoreModule.forRoot({ color: colorReducer })
   ],
   providers: [importProvidersFrom(HttpClientModule),],
   bootstrap: [AppComponent]
