@@ -1,0 +1,46 @@
+.color_container
+    height: 300px
+    width: 18vw
+    justify-content: center
+    align-items: center
+    display: flex
+
+.showcase_section
+    display: flex
+    gap: 15px
+
+.storage_section
+    display: flex
+    gap: 15px
+    flex-direction: column
+// Text
+
+.title_text
+    color: white
+    font-size: larger
+    font-family: math
+    font-weight: 700
+
+// Button
+.delete_button
+    margin: 10px
+    padding: 15px
+    border-radius: 15px
+    border: 2px solid
+    color: white
+    background: none
+    font-style: italic
+    font-size: medium
+
+.delete_button:hover
+    color: rgb(42, 57, 80)
+    background: white
+
+@media screen and (max-width:600px)
+    .showcase_section
+        flex-direction: column
+        width: 100%
+        align-items: center
+
+    .color_container
+        width: 50vw

@@ -6,7 +6,7 @@ import { clear } from 'src/app/store/color.actions';
 @Component({
   selector: 'app-storage-page',
   templateUrl: './storage-page.component.html',
-  styleUrls: ['./storage-page.component.css']
+  styleUrls: ['./storage-page.component.sass']
 })
 export class StoragePageComponent {
   color$: any

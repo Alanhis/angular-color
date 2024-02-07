@@ -1,0 +1,61 @@
+/* Containers */
+
+.color_container
+    height: 45vh
+    width: 16vw
+    justify-content: center
+    align-items: center
+    display: flex
+    border-radius: 30px
+    flex-direction: column
+    gap: 10px
+
+.showcase_section
+    display: flex
+    gap: 15px
+
+.color_main
+    display: flex
+    align-items: center
+    flex-direction: column
+
+/* Text */
+
+.title_text
+    font-family: system-ui
+    color: white
+
+/* Buttons */
+
+.outside_button
+    margin: 10px
+    padding: 15px
+    border-radius: 15px
+    border: 2px solid
+    color: white
+    background: none
+    font-style: italic
+    font-size: medium
+
+.outside_button:hover
+    color: rgb(42, 57, 80)
+    background: white
+
+.pattern_color_button
+    background: none
+    border: none
+    font-weight: 300
+    font-size: 1.2em
+    font-family: system-ui
+
+.pattern_color_button:hover
+    -webkit-transform: scale(1.2)
+
+@media screen and (max-width:600px)
+    .showcase_section
+        flex-direction: column
+        width: 100%
+        align-items: center
+
+    .color_container
+        width: 50vw

@@ -1,9 +1,11 @@
 <main class="color_main">
-    <h2>Color</h2>
-    <button style="margin: 10px;" (click)="searchColor()">Изменить цвет</button>
+    <h2 class="title_text">Color pattern</h2>
+    <button class="outside_button" (click)="searchColor()">Изменить цвет</button>
     <section class="showcase_section">
-      <div *ngFor="let item of response; index as i;" class="color_container" style="background-color: rgb({{item}})"><button (click)="lockColor(i)">Lock</button>
-      <button (click)="saveColor(i)">Save</button></div>
+      <div *ngFor="let item of response; index as i;" class="color_container" style="background-color: rgb({{item}})">
+        <button class="pattern_color_button" style="{{(item[0]*0.299 + item[1]*0.587 + item[2]*0.114) > 180 ? 'color:#000000' : 'color: #ffffff'}}" (click)="lockColor(i)">Lock</button>
+        <button class="pattern_color_button" style="{{(item[0]*0.299 + item[1]*0.587 + item[2]*0.114) > 180 ? 'color:#000000' : 'color: #ffffff'}}" (click)="saveColor(i)">Save</button>
+      </div>
     </section>
-    <button style="margin: 10px;" (click)="storageColor()">Сохранить палитру</button>
+    <button class="outside_button" (click)="storageColor()">Сохранить палитру</button>
   </main>

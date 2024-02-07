@@ -1,17 +1,16 @@
-<ul>
-    <li>
+<header class="header_container">
+    
         <a routerLink="/" routerLinkActive="active-link"
             >Color</a
         >
-    </li>
-    <li>
+    
+        <p> {{todayDate | date:'hh:mm:ss'}}</p>
         <a routerLink="/storage" routerLinkActive="active-link"
             >Storage</a
         >
-    </li>
-    <li>
-        {{todayDate | date:'hh:mm:ss'}}
-    </li>
+    
+       
+     
     <!-- <li>
         <a
             routerLink="/home/profile"
@@ -19,4 +18,4 @@
             >Profile</a
         >
     </li> -->
-  </ul>
+</header>

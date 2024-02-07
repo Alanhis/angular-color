@@ -8,7 +8,7 @@ import { add } from 'src/app/store/color.actions';
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.css']
+  styleUrls: ['./main-page.component.sass']
 })
 
 export class MainPageComponent {
